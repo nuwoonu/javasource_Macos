@@ -7,8 +7,9 @@ public class SwitchEx1 {
         //현재 월 입력받기.
         Scanner sc = new Scanner(System.in);
         System.out.println("현재의 월을 입력해주세요 : ");
-        int month = Integer.parseInt(sc.nextLine());
-        switch(month)
+        int month = Integer.parseInt(sc.nextLine()); // 스캐너로 받은 값을 month 변수에 대입!
+        switch(month) //case 1 == 1과 같은가? true시 문장 수행 같다면을 쓸때 유용! 대소 비교시 불편.
+        //Switch 문은 조건 사용시 (정수, 문자열만) 가능!
         {
             case 3:
             case 4:
@@ -34,5 +35,6 @@ public class SwitchEx1 {
                 System.out.println("다시 입력하세요.");
             break;
         }
+
     }
 }
