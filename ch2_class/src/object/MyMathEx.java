@@ -11,7 +11,7 @@ public class MyMathEx {
 
         long result= mymath.add(12, 63);
         System.out.println(result);
-        System.out.println(mymath.add(12, 63));
+        System.out.println(mymath.add(12, 63)); //출력문에 받을 경우
 
         result = mymath.subtract(85, 35);
         System.out.println("뺄셈 결과 "+result);

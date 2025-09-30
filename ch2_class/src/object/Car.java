@@ -11,7 +11,9 @@ public class Car {
     // 클래스 이름과 동일해야한다!.
     // *****    생성자는 리턴값이 없다! (void도 쓰지 않음)      *****
     // 생성자 만드는 이유 : 1.멤버변수 초기화 목적 
-
+    
+    //** 생성자 오버로딩 : 하나의 클래스에 여러개의 생성자 존재 **
+    //** 메소드 오버로딩 : 하나의 클래스에 여러개의 메소드 존재 **
     Car() { // 괄호안에 아무것도 없는 경우 default 생성자 (기본생성자)를 의미함.
             // 컴파일러가 생성자를 자동으로 추가 : 단 클래스에 정의된 생성자가 하나도 없는 경우
 
@@ -28,7 +30,14 @@ public class Car {
         this.companyName = companyName;
         this.model = model;
     }
+    // **********************************************
 
+    // public Car(String companyName, int color) { // 생성자 오버로딩시 매개변수 type 이나 순서가 달라야함.
+    //     this.companyName = companyName;
+    //     this.model = model;
+    // }
+    
+    // ********************************************** 
     
 
     public Car(String companyName, String model, String color) {
@@ -45,6 +54,7 @@ public class Car {
         this.color = color;
         this.maxSpeed = maxSpeed;
     }
+    
 
     void forward()
         {
