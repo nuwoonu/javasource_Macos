@@ -24,7 +24,7 @@ public class Account {
     public String getAccountNo() {
         return AccountNo;
     }
-    void deposit(long amount)
+    void deposit(long amount) //입금한다
     {
         balance += amount;
     }
@@ -34,9 +34,4 @@ public class Account {
     }
     // 입금한다(잔액 = 잔액 + 입금액) ==> 입금액 인자로 받아서 처리 ==> 리턴타입 없음 ,deposit
     // 출금한다.(잔액 = 잔액 - 출금액) ==> 출금액 인자로 받아서 처리 ==> 잔액리턴 ,withdraw
-    
-    
-
-
-
 }
