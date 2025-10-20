@@ -26,5 +26,6 @@ public class ArraysEx2 {
         cloned2[1]= Arrays.copyOf(original[1], original[1].length);
         System.out.println("주소"+original.equals(cloned2));
         System.out.println(Arrays.equals(original, cloned2)? "배열요소가 같음":"배열요소가 다름");
+        
     }
 }
